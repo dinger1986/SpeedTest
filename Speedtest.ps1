@@ -4,8 +4,8 @@
 $mindownloadspeed = 19
 $minuploadspeed = 4
 
-# File to download you can find download links for other files here https://www.futurehosting.com/network-test-files/
-$downloadurl = "http://87.76.21.20/test.zip"
+# File to download you can find download links for other files here https://github.com/dinger1986/SpeedTest
+$downloadurl = "https://github.com/dinger1986/SpeedTest/raw/main/10MB.zip"
 #$UploadURL = "http://ipv4.download.thinkbroadband.com/10MB.zip"
 
 # SIZE OF SPECIFIED FILE IN MB (adjust this to match the size of your file in MB as above)
