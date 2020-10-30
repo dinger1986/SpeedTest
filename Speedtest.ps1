@@ -12,7 +12,7 @@ $downloadurl = "https://github.com/dinger1986/SpeedTest/raw/main/10MB.zip"
 $size = 10
 
 # WHERE TO STORE DOWNLOADED FILE
-$localfile = "test.zip"
+$localfile = "10MB.zip"
 
 # WEB CLIENT VARIABLES
 $webclient = New-Object System.Net.WebClient
@@ -30,6 +30,10 @@ Write-Output "Time taken: $downloadtimetaken second(s) | Download Speed: $downlo
 #$uploadtimetaken = $((Get-Date).Subtract($uploadstart_time).Seconds)
 #$uploadspeed = ($size / $uploadtimetaken) * 8
 #Write-Output "Time taken: $uploadtimetaken second(s) | Upload Speed: $uploadspeed mbps"
+
+#DELETE TEST DOWNLOAD FILE
+Remove-Item -path $localfile
+
 #SEND ALERTS IF BELOW MINIMUM THRESHOLD 
 if ($downloadspeed -gt $mindownloadspeed) 
 { 
@@ -42,8 +46,5 @@ else
 Write-Output "Current download speed at is $downloadspeed mbps which is below the minimum threshold of $mindownloadspeed mbps" 
 exit 1
 }
-
-#DELETE TEST DOWNLOAD FILE
-Remove-Item -path $localfile
 
 Exit $LASTEXITCODE
