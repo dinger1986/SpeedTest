@@ -4,15 +4,14 @@
 $mindownloadspeed = 19
 $minuploadspeed = 4
 
-# File to download you can find download links for other files here https://github.com/dinger1986/SpeedTest
-$downloadurl = "https://github.com/dinger1986/SpeedTest/raw/main/10MB.zip"
+# File to download you can find download links for other files here https://speedtest.flonix.net
+$downloadurl = "https://speedtest.flonix.net/10MB.bin"
 #$UploadURL = "http://ipv4.download.thinkbroadband.com/10MB.zip"
 
 # SIZE OF SPECIFIED FILE IN MB (adjust this to match the size of your file in MB as above)
 $size = 10
-
-# Name of Localfile
-$localfile = "SpeedTest.zip"
+# Name of Downloaded file
+$localfile = "SpeedTest.bin"
 
 # WEB CLIENT VARIABLES
 $webclient = New-Object System.Net.WebClient
