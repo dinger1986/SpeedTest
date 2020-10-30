@@ -11,8 +11,8 @@ $downloadurl = "https://github.com/dinger1986/SpeedTest/raw/main/10MB.zip"
 # SIZE OF SPECIFIED FILE IN MB (adjust this to match the size of your file in MB as above)
 $size = 10
 
-# WHERE TO STORE DOWNLOADED FILE
-$localfile = "10MB.zip"
+# Name of Localfile
+$localfile = "SpeedTest.zip"
 
 # WEB CLIENT VARIABLES
 $webclient = New-Object System.Net.WebClient
