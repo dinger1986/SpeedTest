@@ -5,11 +5,11 @@ $mindownloadspeed = 19
 $minuploadspeed = 4
 
 # File to download you can find download links for other files here https://speedtest.flonix.net
-$downloadurl = "https://speedtest.flonix.net/10MB.bin"
+$downloadurl = "http://ipv4.download.thinkbroadband.com/1GB.zip"
 #$UploadURL = "http://ipv4.download.thinkbroadband.com/10MB.zip"
 
 # SIZE OF SPECIFIED FILE IN MB (adjust this to match the size of your file in MB as above)
-$size = 10
+$size = 1024
 # Name of Downloaded file
 $localfile = "SpeedTest.bin"
 
